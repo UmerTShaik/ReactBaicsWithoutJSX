@@ -32,7 +32,10 @@ export default function Exmaples(){
     return (
     <Section title="Examples"
      id="examples">
-            <Tabs buttons ={ 
+            <Tabs 
+            //here we send menu the wrapper element as value to Tabs function so we can use this generically 
+            //in other UI files as well
+             buttons ={ 
               <>
               <TabButton
                 isSelected={selectedTopic === 'components'}

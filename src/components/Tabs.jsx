@@ -1,10 +1,11 @@
 
-export default function Tabs({children, buttons}){
+export default function Tabs({children, buttons, ButtonsContainer="menu"}){//here buttonsContainer is a wrapper
+    //const ButtonContainer = buttonsContainer;
     return( <>
-    <menu>
+    <ButtonsContainer>
        {/* //or any name , here used as slots */}
        {buttons}
-    </menu>
+    </ButtonsContainer>
     {children}
     </>
     )
